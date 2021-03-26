@@ -1,0 +1,54 @@
+	Assignment #2  Milestone #2
+=====================================
+Name   : Edgar David Garcia Torres
+ID     : 104433206
+Email  : edgarcia-torres@myseneca.ca
+Section: ZZA
+=====================================
+
+1.
+
+strlen is my favorite function because in assignment #1 i had to struggle to find the length of a string. 
+Before to know about the existence of this function, I had to perform a "for" loop to search for the null identifier to find the 
+end of the string, it makes my code more difficult to read, creates more variables, and code lines in my program. The strlen function 
+gives me the possibility to find the length of a string with a shorter script that fits in one line of code.
+
+2.
+
+a) void getuser(struct Account* login)
+  I created the function getuser to be called from the function getUserLogin. it is included in the library account.c because its functio
+  is related to manage information of accounts 
+  the function of this function is to receive an string when creating or change the user value of one account record.
+  this function validates that the string entered does not have spaces in it. If the string does not contain spaces saves the input.
+
+b) getCountry(struct Account* demo)
+  I created the function getCountry to be called from the function getDemographic.  it is included in the library account.c 
+  because its function is to get data to store in one of the account records.
+  the function of getCountry is to receive the country entered by the user and transform it to uppercase.
+
+c)void getpassword(struct Account* login)
+  I created the function getpassword in to be called from the function getUserLogin.  it is included in the library account.c 
+  because its function is to get data to store in one of the account records.
+  The function of getpassword is to isolate the process of validating if the password entered when creating 
+  a new account record and when modifiying a password. this function could be called from different menus of the program making my 
+  program more readable.
+
+d)void listActivetickets(struct AccountTicketingData* account)
+  I created the function listActivetickets in to be called from the function menu agent to access options that are included in the agent 
+  menu.
+  this function is called when  the option 7 is selected in the agent menu. Its function is to list Active tickets.
+  this function is included in the library accountTicketingUI because it is an extension of the functions contained in this library and 
+  it is related to the ticketing options.
+
+e)void listNewtickets(struct AccountTicketingData* account)
+  I created the function listActivetickets in to be called from the function menu agent
+  this function is called when  the option 6 is selected in the agent menu. Its function is to list new tickets.
+  this function is included in the library accountTicketingUI because it is related to the ticketing options.
+
+f)int findticketIndex(int ticketNum, struct AccountTicketingData* account)
+  I created the function listActivetickets in to be called from multiple  functions that require to find the index of a ticket
+  returns an integer that contains the index of the received ticket number.
+  this function is called by agent and costumer functionalities and may be used for future functionalities.
+  this function is included in the library accountTicketingUI because its function is related to any ticket management.  At this point the 
+  functions related to manage tickets are only three, if they become more in the future i will consider moving them to a library 
+  specialized on managing tickets.
